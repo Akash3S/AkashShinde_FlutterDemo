@@ -1,3 +1,4 @@
+import 'package:demo_app/largepage.dart';
 import 'package:demo_app/menu.dart';
 import 'package:demo_app/newhpage.dart';
 import 'package:demo_app/profile.dart';
@@ -70,6 +71,10 @@ class _MyHomePageState extends State<MyHomePage> {
               IconButton(onPressed: (){
                 Navigator.push(context, MaterialPageRoute(builder: (context)=>Profile()));
               }, icon: Icon(Icons.account_circle, size: 50, color: Colors.black,)),
+
+                IconButton(onPressed: (){
+                  Navigator.push(context, MaterialPageRoute(builder: (context)=>Largepage()));
+                }, icon:Icon(Icons.video_collection,size: 50,color: Colors.black,)),
 
 
               IconButton(onPressed: (){
