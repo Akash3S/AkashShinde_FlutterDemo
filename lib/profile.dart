@@ -1,3 +1,5 @@
+import 'package:demo_app/screens/loginpage.dart';
+import 'package:demo_app/screens/signuppage.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -52,9 +54,25 @@ class Profile extends StatelessWidget{
 
             ),
           ),
-          SizedBox(height: 10),
-          ElevatedButton(onPressed: (){
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 15),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.end,
+              children: [
 
+                Text("Don't have an account?",style: TextStyle(fontSize:14, color: Colors.grey ),),
+                TextButton(onPressed:() {
+                  Navigator.push(context, MaterialPageRoute(builder: (context)=>Signuppage()));
+                }, child: Text("sign up" ,style: TextStyle(fontSize: 14,fontWeight: FontWeight.bold,color: Colors.blue),))
+              ],
+            ),
+          ),
+          
+          SizedBox(height: 10),
+          
+
+          ElevatedButton(onPressed: (){
+          Navigator.push(context, MaterialPageRoute(builder: (context)  =>Loginpage()));
           },
               child: Text("Login"))
         ],
