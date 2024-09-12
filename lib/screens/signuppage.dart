@@ -11,7 +11,7 @@ class _SignuppageState extends State<Signuppage> {
   Widget build(BuildContext context) {
    return Scaffold(
      appBar: AppBar(title: Text('Signup oage'),),
-     body: Center(child: Text("Sing up here",style: TextStyle(fontSize: 14,fontWeight: FontWeight.bold,color: Colors.blue))),
+     body: Center(child: Text("Sing up here with mil& pass",style: TextStyle(fontSize: 14,fontWeight: FontWeight.bold,color: Colors.blue))),
    );
   }
 }
